@@ -1,2 +1,2 @@
-# C-PrimerPlus
+# CppPrimerPlus
 homework for C++PrimerPlus
