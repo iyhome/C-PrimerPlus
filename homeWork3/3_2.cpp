@@ -14,7 +14,7 @@ using namespace std;
 double BMI_computer(double _feet, double _pounds) {
     const double Feet2meter = 0.0254;
     const double pounds2kg = 0.45;
-    
+
     double _bmi = 0;
 
     _bmi = (_pounds * pounds2kg) / pow((_feet * Feet2meter), 2);
@@ -30,6 +30,6 @@ int main() {
 
     BMI = BMI_computer(feet, pounds);
     cout << BMI << endl;
-    
+
     return 0;
 }

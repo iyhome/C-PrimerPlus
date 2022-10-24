@@ -16,7 +16,7 @@ using namespace std;
 double everything2degree(double _degree, double _minute, double _second) {
     const double Minute2degree = 1/(double)60;
     const double Second2degree = 1/(double)3600;
-    
+
     _degree = _degree + _minute * Minute2degree + _second * Second2degree;
     return _degree;
 }
@@ -25,7 +25,7 @@ int main () {
     double degree, minute, second;
     double sum = 0;
     cin >> degree >> minute >> second;
-    sum = everything2degree(degree, minute, second); 
+    sum = everything2degree(degree, minute, second);
 
     cout << "Enter a latitude in degrees, minutes, and seconds:" << endl
         << "First, enter the degrees: " << degree << endl
