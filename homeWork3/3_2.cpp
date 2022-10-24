@@ -6,3 +6,30 @@
 转换为以千克为单位的体重（1 千克 = 2.2 磅）。最后，计算相应的 BMI——体重（千克）
 除以身高（米）的平方。用符号常量表示各种转换因子。
 */
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+double BMI_computer(double _feet, double _pounds) {
+    const double Feet2meter = 0.0254;
+    const double pounds2kg = 0.45;
+    
+    double _bmi = 0;
+
+    _bmi = (_pounds * pounds2kg) / pow((_feet * Feet2meter), 2);
+
+    return _bmi;
+}
+
+
+int main() {
+    double feet, inch, pounds, BMI;
+    cout << "plese input your height by inch & feet, and your weight by pounds, separete by SPACE " << endl;
+    cin >> feet >> inch >> pounds;
+
+    BMI = BMI_computer(feet, pounds);
+    cout << BMI << endl;
+    
+    return 0;
+}

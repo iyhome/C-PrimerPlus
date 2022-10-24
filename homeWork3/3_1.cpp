@@ -4,12 +4,12 @@
 #include <iostream>
 using namespace std;
 
-double feet2inch(double feetHeight){
-    const double transForm = 0.083;
-    return (transForm * feetHeight);
+double feet2inch(double feetHeight) {
+    const double Transform = 0.083;
+    return (Transform * feetHeight);
 }
 
-int main(){
+int main() {
     double heightInch, heightFeet;
     cout << "input your height:___\b\b\b";
     cin >> heightFeet;
