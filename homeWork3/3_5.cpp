@@ -6,3 +6,30 @@
     Enter the population of the US: 310783781
     The population of the US is 4.50492% of the world population.
 */
+#include <iostream>
+using namespace std;
+
+double popuPercent(long long _wPopu, long long _usPopu) {
+    double _percent(0.00);
+    _percent = double(_usPopu)/double(_wPopu);
+
+    return _percent;
+}
+
+int main() {
+    long long wPopu(0), usPopu(0);
+    double percent(0.00);
+
+    cout << "Enter the world's population: ";
+    cin >> wPopu;
+    cout << "Enter the population of the US: ";
+    cin >> usPopu;
+
+    percent = popuPercent(wPopu, usPopu);
+
+    cout << "The population of the US is "
+        << percent*100 <<"% of the world population."
+        << endl;
+
+    return 0;
+}

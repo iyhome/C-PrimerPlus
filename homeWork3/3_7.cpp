@@ -7,3 +7,24 @@
 1 加仑等于 3.785 升。因此，19mpg 大约合 12.4L/100km，
 27mpg 大约合 8.7L/100km。
 */
+#include <iostream>
+using namespace std;
+
+float tranfrom(float _eu) {
+    float _us = 0.0000;
+    const float aDis = 62.14;
+    const float aOil = 1 / 3.785;
+    float eu2us = aDis / aOil;
+
+    _us = eu2us / _eu;
+    return _us;
+}
+
+int main() {
+    float eu(0.0000), us(0.0000);
+    cin >> eu;
+    us = tranfrom(eu);
+    cout << us << endl;
+
+    return 0;
+}
