@@ -1,12 +1,18 @@
 #include <iostream>
-#include <string>
+#include <string>   //enable string function
+#include <cstring>  //C语言风格字符串库
 using namespace std;
 
 class _string
 {
-private:
 public:
     void sTring();
+    void cpyCat();
+private:
+    string fistName;
+    string lastName;
+    string address;
+    string name;
 };
 
 int main(int argc, char const *argv[])
@@ -18,15 +24,17 @@ int main(int argc, char const *argv[])
 }
 
 void _string::sTring() {
-    string fistName {"Yhome"};  //string类型可以上char字符串一样赋值
-    string lastName = "Chou";   //string类型最为经典的赋值方式
-    string address, name;
+    fistName = {"Yhome"};  //string类型可以上char字符串一样赋值
+    lastName = "Chou";   //string类型最为经典的赋值方式
 
+    cout << "Please input something: ";
     cin >> address; //string类型不需要程序员考虑它的size，能够自动处理
     cout << address << endl;
 
     name = fistName + " " + lastName;   //string类型可以相互赋值和合并
     cout << name << endl;
+}
 
-
+void _string::cpyCat() {
+    
 }
