@@ -9,7 +9,6 @@ public:
 private:
 };
 
-
 int main(int argc, char const *argv[])
 {
     getFunc a;

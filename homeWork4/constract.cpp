@@ -18,7 +18,7 @@ int main(int argc, char const *argv[]) {
 
     return 0;
 }
-git remote set-url origin git@github.com:用户名/仓库名.git
+
 void constract::_struct() {
     // 1,默认的定义结构体的方式
     struct student {     //结构体与数组不同点在于：结构体储存的是不同类型的元素，比数组要灵活。
